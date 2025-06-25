@@ -5,7 +5,8 @@ parse_git_branch() {
         echo -e "\e[32m($branch)"
     fi
 }
-PS1='\[\e[90m\][\t] \u@\h $(parse_git_branch) \[\e[36m\]\W\n \[\e[35m\] ➜ \[\e[0m\]'
+PS1='\[\e[90m\][\t] \[\e[38;5;202m\]\u@\h $(parse_git_branch) \[\e[36m\]\W\[\e[35m\] ➜ \[\e[0m\]'
+
 
 # add color support to ls
 alias ls='ls --color=auto'
@@ -16,5 +17,9 @@ alias grep='grep --color=auto'
 # aliases
 alias ll='ls -l'
 alias la='ls -la'
+alias gs='git status'
+alias ga='git add .'
+alias gm='git commit'
+
 
 
