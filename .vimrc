@@ -9,6 +9,10 @@ nnoremap <F5> :echo synIDattr(synIDtrans(synID(line('.'), col('.'), 1)), 'name')
 set number
 set relativenumber
 
+" deactivate default mode hints
+set noshowmode
+
+
 " install plugins
 if empty(glob('~/.vim/autoload/plug.vim'))
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
