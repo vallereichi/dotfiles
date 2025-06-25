@@ -14,6 +14,12 @@ alias ls='ls --color=auto'
 # add color support to grep
 alias grep='grep --color=auto'
 
+# choose to use neovim instead of vim
+if command -v nvim >/dev/null 2>&1; then
+	alias vim='nvim'
+fi
+
+
 # aliases
 alias ll='ls -l'
 alias la='ls -la'

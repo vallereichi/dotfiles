@@ -19,6 +19,11 @@ set tabstop=4
 set shiftwidth=4
 set encoding=UTF-8
 
+" set cursor style
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
+
 
 
 " install plugins
