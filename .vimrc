@@ -12,6 +12,14 @@ set relativenumber
 " deactivate default mode hints
 set noshowmode
 
+" set tabstops and autoindent
+set autoindent
+set smarttab
+set tabstop=4
+set shiftwidth=4
+set encoding=UTF-8
+
+
 
 " install plugins
 if empty(glob('~/.vim/autoload/plug.vim'))
